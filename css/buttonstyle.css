@@ -1,0 +1,60 @@
+body, html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+  overflow: hidden;
+  font-family: 'Lato', sans-serif;
+}
+
+.container {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center {
+  width: 360px;
+  height: 220px;
+  position: absolute;
+}
+
+.btn {
+  width: 360px;
+  height: 220px;
+  cursor: pointer;
+  background-color: #fefefe;
+  border: 1px solid #a4dcec;
+  outline: none;
+  transition: 1s ease-in-out;
+}
+
+svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  fill: none;
+  transition: 1s ease-in-out;
+}
+
+.btn:hover {
+  transition: 1s ease-in-out;
+  background: #a4dcec;
+}
+
+.btn:hover svg {
+  stroke-dashoffset: -480;
+}
+
+.btn span {
+  color: white;
+  font-size: 18px;
+  font-weight: 100;
+}
